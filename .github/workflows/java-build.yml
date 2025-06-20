@@ -13,4 +13,6 @@ jobs:
       - name: Build with Maven
         run: |
           cd ${{ inputs.working-directory }}
-          mvn clean verify
+          mvn clean test
+          mvn clean package
+          java -jar target/hello-world-1.0-SNAPSHOT.jar
