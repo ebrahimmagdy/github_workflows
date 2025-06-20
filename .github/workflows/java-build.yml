@@ -24,4 +24,3 @@ jobs:
           cd ${{ inputs.working-directory }}
           mvn clean test
           mvn clean package
-          java -jar target/hello-world-1.0-SNAPSHOT.jar
